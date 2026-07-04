@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Caminante | Javier Aguilar</title>
+    <style>
+        :root { --oro: #c5a059; --negro: #0a0a0a; --gris: #d1d1d1; }
+        body { margin: 0; background-color: var(--negro); color: var(--gris); font-family: 'Courier New', monospace; line-height: 1.6; }
+        
+        .fog-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; background: radial-gradient(circle, rgba(20,20,20,0.8) 0%, #000 100%); }
+        .content { position: relative; z-index: 1; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2 { color: var(--oro); text-transform: uppercase; letter-spacing: 3px; }
+        
+        .expediente { border: 1px solid var(--oro); padding: 20px; margin: 30px 0; background: rgba(255,255,255,0.03); transition: 0.4s; }
+        .expediente:hover { border-color: #fff; }
+        
+        .author-box { display: flex; align-items: center; gap: 20px; margin: 40px 0; padding: 20px; border-top: 1px solid var(--oro); border-bottom: 1px solid var(--oro); }
+        .author-img { width: 150px; height: 150px; background: #333; object-fit: cover; border-radius: 50%; }
+        
+        .contact-links a { color: var(--oro); margin-right: 15px; text-decoration: none; font-weight: bold; }
+        .btn { display: inline-block; padding: 12px 25px; border: 1px solid var(--oro); color: var(--oro); text-decoration: none; margin-top: 15px; transition: 0.3s; }
+        .btn:hover { background: var(--oro); color: var(--negro); }
+    </style>
+</head>
+<body>
+    <div class="fog-container"></div>
+    
+    <div class="content">
+        <header style="text-align: center; padding: 80px 0;">
+            <h1>EL CAMINANTE</h1>
+            <p>¿Y si el insomnio no fuera una enfermedad?</p>
+        </header>
+
+        <section id="sinopsis">
+            <h2>La Novela</h2>
+            <p>Álex tiene veintiún años y lleva meses sin dormir. Lo que comenzó como un simple trastorno del sueño pronto se convierte en una pesadilla. Theodore Grimes vive bajo una identidad prestada, huyendo de un pasado que nunca duerme. Dos hombres. Dos historias. Un misterio que los une.</p>
+            <a href="#" class="btn">Comprar en Amazon</a>
+        </section>
+
+        <!-- Expedientes -->
+        <div class="expediente">
+            <h2>EXPEDIENTE CLÍNICO: ÁLEX</h2>
+            <p><strong>Diagnóstico:</strong> Insomnio persistente sin explicación médica. Su mente se fractura, sus sentidos se agudizan hacia una verdad prohibida.</p>
+            <button class="btn" onclick="alert('Acceso restringido: Expediente encriptado.')">Ver expediente</button>
+        </div>
+
+        <div class="expediente">
+            <h2>EXPEDIENTE POLICIAL: THEODORE GRIMES</h2>
+            <p><strong>Estado:</strong> Fugitivo. Identidad falsa confirmada. Vive en la sombra, en alerta constante. Nadie debe saber quién es realmente.</p>
+            <button class="btn" onclick="alert('Acceso restringido: Expediente clasificado.')">Abrir expediente</button>
+        </div>
+
+        <!-- Sobre el autor -->
+        <section class="author-box">
+            <div class="author-img"></div> <!-- Aquí insertarás el nombre de tu foto en el futuro -->
+            <div>
+                <h2>Sobre el autor</h2>
+                <p>Javier Aguilar. Escritor de thrillers psicológicos. Exploro los límites de la mente humana a través de historias donde nada es lo que parece.</p>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section style="text-align: center; padding-bottom: 50px;">
+            <h2>Contacto</h2>
+            <div class="contact-links">
+                <a href="#">TikTok</a>
+                <a href="#">X (Twitter)</a>
+                <a href="mailto:tuemail@ejemplo.com">Correo electrónico</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
